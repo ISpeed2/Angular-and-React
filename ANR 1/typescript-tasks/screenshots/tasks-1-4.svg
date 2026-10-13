@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1013" viewBox="0 0 1500 1013">
+  <rect width="100%" height="100%" rx="18" fill="#111318"/>
+  <rect width="100%" height="48" rx="18" fill="#252932"/>
+  <rect y="30" width="100%" height="18" fill="#252932"/>
+  <circle cx="25" cy="24" r="7" fill="#ff5f57"/>
+  <circle cx="49" cy="24" r="7" fill="#febc2e"/>
+  <circle cx="73" cy="24" r="7" fill="#28c840"/>
+  <text x="750" y="30" text-anchor="middle" fill="#9ca3af" font-family="Menlo, Monaco, monospace" font-size="14">typescript-tasks — 1-4</text>
+  <g font-family="Menlo, Monaco, 'Courier New', monospace" font-size="16"><text x="32" y="82" fill="#a3e635">$ node app.js 1-4</text>
+<text x="32" y="105" fill="#d8dee9"> </text>
+<text x="32" y="128" fill="#d8dee9"> </text>
+<text x="32" y="151" fill="#d8dee9">==============================================================</text>
+<text x="32" y="174" fill="#67e8f9">ЗАДАНИЕ 1. Базовые типы</text>
+<text x="32" y="197" fill="#d8dee9">--------------------------------------------------------------</text>
+<text x="32" y="220" fill="#d8dee9">{</text>
+<text x="32" y="243" fill="#d8dee9">  numericValue: 42,</text>
+<text x="32" y="266" fill="#d8dee9">  textValue: 'TypeScript',</text>
+<text x="32" y="289" fill="#d8dee9">  booleanValue: true,</text>
+<text x="32" y="312" fill="#d8dee9">  bigValue: '100n',</text>
+<text x="32" y="335" fill="#d8dee9">  symbolValue: 'Symbol(id)',</text>
+<text x="32" y="358" fill="#d8dee9">  nullValue: null,</text>
+<text x="32" y="381" fill="#d8dee9">  undefinedValue: undefined</text>
+<text x="32" y="404" fill="#d8dee9">}</text>
+<text x="32" y="427" fill="#d8dee9"> </text>
+<text x="32" y="450" fill="#d8dee9">==============================================================</text>
+<text x="32" y="473" fill="#67e8f9">ЗАДАНИЕ 2. Обработка unknown без any</text>
+<text x="32" y="496" fill="#d8dee9">--------------------------------------------------------------</text>
+<text x="32" y="519" fill="#d8dee9">&quot;hello&quot; → HELLO</text>
+<text x="32" y="542" fill="#d8dee9">21 → 42</text>
+<text x="32" y="565" fill="#d8dee9">true → неизвестный тип</text>
+<text x="32" y="588" fill="#d8dee9"> </text>
+<text x="32" y="611" fill="#d8dee9">==============================================================</text>
+<text x="32" y="634" fill="#67e8f9">ЗАДАНИЕ 3. Массивы и матрица 3×3</text>
+<text x="32" y="657" fill="#d8dee9">--------------------------------------------------------------</text>
+<text x="32" y="680" fill="#d8dee9">Города: Москва, Казань, Сочи</text>
+<text x="32" y="703" fill="#d8dee9">Матрица: [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ]</text>
+<text x="32" y="726" fill="#d8dee9">Сумма матрицы: 45</text>
+<text x="32" y="749" fill="#d8dee9">Пустой number[]: []</text>
+<text x="32" y="772" fill="#d8dee9"> </text>
+<text x="32" y="795" fill="#d8dee9">==============================================================</text>
+<text x="32" y="818" fill="#67e8f9">ЗАДАНИЕ 4. Кортежи</text>
+<text x="32" y="841" fill="#d8dee9">--------------------------------------------------------------</text>
+<text x="32" y="864" fill="#d8dee9">Иван, 30 лет, активен</text>
+<text x="32" y="887" fill="#d8dee9">Опциональный кортеж: [ 'Анна', 25 ]</text>
+<text x="32" y="910" fill="#d8dee9"> </text>
+<text x="32" y="933" fill="#d8dee9">==============================================================</text>
+<text x="32" y="956" fill="#86efac">Выполнение заданий 1–4 завершено успешно.</text></g>
+</svg>

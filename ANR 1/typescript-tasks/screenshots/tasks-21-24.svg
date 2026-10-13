@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1105" viewBox="0 0 1500 1105">
+  <rect width="100%" height="100%" rx="18" fill="#111318"/>
+  <rect width="100%" height="48" rx="18" fill="#252932"/>
+  <rect y="30" width="100%" height="18" fill="#252932"/>
+  <circle cx="25" cy="24" r="7" fill="#ff5f57"/>
+  <circle cx="49" cy="24" r="7" fill="#febc2e"/>
+  <circle cx="73" cy="24" r="7" fill="#28c840"/>
+  <text x="750" y="30" text-anchor="middle" fill="#9ca3af" font-family="Menlo, Monaco, monospace" font-size="14">typescript-tasks — 21-24</text>
+  <g font-family="Menlo, Monaco, 'Courier New', monospace" font-size="16"><text x="32" y="82" fill="#a3e635">$ node app.js 21-24</text>
+<text x="32" y="105" fill="#d8dee9"> </text>
+<text x="32" y="128" fill="#d8dee9"> </text>
+<text x="32" y="151" fill="#d8dee9">==============================================================</text>
+<text x="32" y="174" fill="#67e8f9">ЗАДАНИЕ 21. Дженерик-класс Queue&lt;T&gt;</text>
+<text x="32" y="197" fill="#d8dee9">--------------------------------------------------------------</text>
+<text x="32" y="220" fill="#d8dee9">Числа — peek: 10 dequeue: 10 size: 1</text>
+<text x="32" y="243" fill="#d8dee9">Строки — peek: первый dequeue: первый size: 1</text>
+<text x="32" y="266" fill="#d8dee9"> </text>
+<text x="32" y="289" fill="#d8dee9">==============================================================</text>
+<text x="32" y="312" fill="#67e8f9">ЗАДАНИЕ 22. Utility Types для Article</text>
+<text x="32" y="335" fill="#d8dee9">--------------------------------------------------------------</text>
+<text x="32" y="358" fill="#d8dee9">Partial: { title: 'Черновик' }</text>
+<text x="32" y="381" fill="#d8dee9">Pick: { id: 1, title: 'TypeScript' }</text>
+<text x="32" y="404" fill="#d8dee9">Omit: {</text>
+<text x="32" y="427" fill="#d8dee9">  title: 'Без ID',</text>
+<text x="32" y="450" fill="#d8dee9">  content: 'Текст',</text>
+<text x="32" y="473" fill="#d8dee9">  publishedAt: 2026-10-13T00:00:00.000Z,</text>
+<text x="32" y="496" fill="#d8dee9">  tags: [ 'ts' ]</text>
+<text x="32" y="519" fill="#d8dee9">}</text>
+<text x="32" y="542" fill="#d8dee9">Required: {</text>
+<text x="32" y="565" fill="#d8dee9">  id: 2,</text>
+<text x="32" y="588" fill="#d8dee9">  title: 'Готово',</text>
+<text x="32" y="611" fill="#d8dee9">  content: 'Все поля обязательны',</text>
+<text x="32" y="634" fill="#d8dee9">  publishedAt: 2026-10-13T00:00:00.000Z,</text>
+<text x="32" y="657" fill="#d8dee9">  tags: [ 'typescript', 'utility-types' ]</text>
+<text x="32" y="680" fill="#d8dee9">}</text>
+<text x="32" y="703" fill="#d8dee9"> </text>
+<text x="32" y="726" fill="#d8dee9">==============================================================</text>
+<text x="32" y="749" fill="#67e8f9">ЗАДАНИЕ 23. Record и ReturnType</text>
+<text x="32" y="772" fill="#d8dee9">--------------------------------------------------------------</text>
+<text x="32" y="795" fill="#d8dee9">Результаты: { 'Анна': 95, 'Иван': 88, 'Олег': 91, 'Мария': 100 }</text>
+<text x="32" y="818" fill="#d8dee9">Конфигурация: { apiUrl: 'https://api.example.com', timeout: 5000, retries: 3 }</text>
+<text x="32" y="841" fill="#d8dee9"> </text>
+<text x="32" y="864" fill="#d8dee9">==============================================================</text>
+<text x="32" y="887" fill="#67e8f9">ЗАДАНИЕ 24. Discriminated union Response</text>
+<text x="32" y="910" fill="#d8dee9">--------------------------------------------------------------</text>
+<text x="32" y="933" fill="#d8dee9">Успех: один, два</text>
+<text x="32" y="956" fill="#d8dee9">Ошибка: Нет соединения</text>
+<text x="32" y="979" fill="#d8dee9">Загрузка...</text>
+<text x="32" y="1002" fill="#d8dee9"> </text>
+<text x="32" y="1025" fill="#d8dee9">==============================================================</text>
+<text x="32" y="1048" fill="#86efac">Выполнение заданий 21–24 завершено успешно.</text></g>
+</svg>

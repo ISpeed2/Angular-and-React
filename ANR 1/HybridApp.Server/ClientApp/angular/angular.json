@@ -1,0 +1,44 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "angular": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "outputPath": "dist/angular",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "css",
+            "styles": ["src/styles.css"],
+            "baseHref": "/angular/"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "all",
+              "budgets": [
+                { "type": "initial", "maximumWarning": "1MB", "maximumError": "2MB" }
+              ]
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "options": { "port": 4200, "buildTarget": "angular:build" }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "1104ce1c-9e4c-413e-bee4-c9539c81df14"
+  }
+}

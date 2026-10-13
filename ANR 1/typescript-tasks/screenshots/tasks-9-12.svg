@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="783" viewBox="0 0 1500 783">
+  <rect width="100%" height="100%" rx="18" fill="#111318"/>
+  <rect width="100%" height="48" rx="18" fill="#252932"/>
+  <rect y="30" width="100%" height="18" fill="#252932"/>
+  <circle cx="25" cy="24" r="7" fill="#ff5f57"/>
+  <circle cx="49" cy="24" r="7" fill="#febc2e"/>
+  <circle cx="73" cy="24" r="7" fill="#28c840"/>
+  <text x="750" y="30" text-anchor="middle" fill="#9ca3af" font-family="Menlo, Monaco, monospace" font-size="14">typescript-tasks — 9-12</text>
+  <g font-family="Menlo, Monaco, 'Courier New', monospace" font-size="16"><text x="32" y="82" fill="#a3e635">$ node app.js 9-12</text>
+<text x="32" y="105" fill="#d8dee9"> </text>
+<text x="32" y="128" fill="#d8dee9"> </text>
+<text x="32" y="151" fill="#d8dee9">==============================================================</text>
+<text x="32" y="174" fill="#67e8f9">ЗАДАНИЕ 9. Union-тип ID</text>
+<text x="32" y="197" fill="#d8dee9">--------------------------------------------------------------</text>
+<text x="32" y="220" fill="#d8dee9">Строковый ID: user-42</text>
+<text x="32" y="243" fill="#d8dee9">Числовой ID: 101</text>
+<text x="32" y="266" fill="#d8dee9"> </text>
+<text x="32" y="289" fill="#d8dee9">==============================================================</text>
+<text x="32" y="312" fill="#67e8f9">ЗАДАНИЕ 10. Intersection-типы</text>
+<text x="32" y="335" fill="#d8dee9">--------------------------------------------------------------</text>
+<text x="32" y="358" fill="#d8dee9">{ name: 'Олег', age: 28 }</text>
+<text x="32" y="381" fill="#d8dee9">{ name: 'Олег', age: 28, email: 'oleg@example.com' }</text>
+<text x="32" y="404" fill="#d8dee9"> </text>
+<text x="32" y="427" fill="#d8dee9">==============================================================</text>
+<text x="32" y="450" fill="#67e8f9">ЗАДАНИЕ 11. Литеральный тип Direction</text>
+<text x="32" y="473" fill="#d8dee9">--------------------------------------------------------------</text>
+<text x="32" y="496" fill="#d8dee9">Движение вверх</text>
+<text x="32" y="519" fill="#d8dee9">Движение влево</text>
+<text x="32" y="542" fill="#d8dee9">&quot;north&quot; отклоняется компилятором</text>
+<text x="32" y="565" fill="#d8dee9"> </text>
+<text x="32" y="588" fill="#d8dee9">==============================================================</text>
+<text x="32" y="611" fill="#67e8f9">ЗАДАНИЕ 12. Интерфейсы Vehicle и Car</text>
+<text x="32" y="634" fill="#d8dee9">--------------------------------------------------------------</text>
+<text x="32" y="657" fill="#d8dee9">{ brand: 'Tesla', year: 2025, model: 'Model 3', electric: true }</text>
+<text x="32" y="680" fill="#d8dee9"> </text>
+<text x="32" y="703" fill="#d8dee9">==============================================================</text>
+<text x="32" y="726" fill="#86efac">Выполнение заданий 9–12 завершено успешно.</text></g>
+</svg>

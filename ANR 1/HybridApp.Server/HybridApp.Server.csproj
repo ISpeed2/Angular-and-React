@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <SpaRoot>ClientApp/</SpaRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="$(SpaRoot)**" />
+    <None Remove="$(SpaRoot)**" />
+    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)**/node_modules/**;$(SpaRoot)**/dist/**" />
+  </ItemGroup>
+
+  <Target Name="PublishFrontends" AfterTargets="ComputeFilesToPublish">
+    <Exec WorkingDirectory="ClientApp/react" Command="npm install" />
+    <Exec WorkingDirectory="ClientApp/react" Command="npm run build" />
+    <Exec WorkingDirectory="ClientApp/angular" Command="npm install" />
+    <Exec WorkingDirectory="ClientApp/angular" Command="npm run build" />
+
+    <ItemGroup>
+      <ReactFiles Include="ClientApp/react/dist/**/*" />
+      <AngularFiles Include="ClientApp/angular/dist/angular/browser/**/*" />
+      <ResolvedFileToPublish Include="@(ReactFiles->'%(FullPath)')">
+        <RelativePath>wwwroot/react/%(RecursiveDir)%(Filename)%(Extension)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </ResolvedFileToPublish>
+      <ResolvedFileToPublish Include="@(AngularFiles->'%(FullPath)')">
+        <RelativePath>wwwroot/angular/%(RecursiveDir)%(Filename)%(Extension)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>

@@ -1,0 +1,43 @@
+<main class="shell">
+  <nav>
+    <a class="brand" href="/angular/"><span>H</span> Hybrid Hub</a>
+    <div class="switcher" aria-label="Переключение интерфейса">
+      <a href="/react/">React</a>
+      <a class="active" href="/angular/">Angular</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <p class="eyebrow">ASP.NET CORE × ANGULAR</p>
+      <h1>Один сервер.<br><em>Два взгляда.</em></h1>
+      <p class="lead">Angular-клиент использует тот же API и ту же cookie. Интерфейсы независимы, а пользовательская сессия — общая.</p>
+    </div>
+    <div class="shape" aria-hidden="true"><span>A</span></div>
+  </section>
+
+  <section class="panel" *ngIf="session?.isAuthenticated; else loginPanel">
+    <div class="panel-head">
+      <div><p class="label">Активная сессия</p><h2>С возвращением, {{ session.name }}</h2></div>
+      <button class="ghost" (click)="logout()">Выйти</button>
+    </div>
+    <div class="cards">
+      <article *ngFor="let item of dashboard?.items; index as index">
+        <span>0{{ index + 1 }}</span><h3>{{ item.title }}</h3><p>{{ item.description }}</p><small>{{ item.status }}</small>
+      </article>
+    </div>
+  </section>
+
+  <ng-template #loginPanel>
+    <section class="panel login-panel">
+      <div><p class="label">Демо-вход</p><h2>Откройте общую сессию</h2><p>Введите имя — после этого React-клиент тоже узнает вас.</p></div>
+      <form (ngSubmit)="login()">
+        <label for="name">Ваше имя</label>
+        <div class="input-row"><input id="name" name="name" [(ngModel)]="name" placeholder="Например, Алекс" minlength="2" maxlength="40" required><button>Войти →</button></div>
+        <p class="error" *ngIf="error">{{ error }}</p>
+      </form>
+    </section>
+  </ng-template>
+
+  <footer><span>Angular client</span><span>SharedAuth / API v1</span></footer>
+</main>

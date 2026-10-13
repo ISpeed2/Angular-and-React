@@ -1,0 +1,6 @@
+@HybridApp.Server_HostAddress = http://localhost:0
+
+GET {{HybridApp.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

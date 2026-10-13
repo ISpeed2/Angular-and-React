@@ -1,0 +1,10 @@
+**/bin/
+**/obj/
+**/node_modules/
+**/dist/
+**/.angular/
+**/out-tsc/
+**/*.tsbuildinfo
+**/vite.config.js
+**/vite.config.d.ts
+.DS_Store
