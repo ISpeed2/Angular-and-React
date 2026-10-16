@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+button:hover { opacity: 0.85; }
+
+.todo-table { overflow-x: auto; }
+
+.todo-columns, .todo-row {
+  display: grid;
+  grid-template-columns: 20px minmax(140px, 1fr) 165px 76px;
+  align-items: center;
+  gap: 10px;
+  min-width: 455px;
+  padding: 12px 12px 12px 8px;
+}
+
+.todo-columns {
+  border-left: 4px solid transparent;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.todo-row > span { overflow-wrap: anywhere; }
+.todo-row > input:not([type="checkbox"]) { min-width: 0; width: 100%; }
+.todo-actions { display: flex; justify-content: flex-end; gap: 8px; }
