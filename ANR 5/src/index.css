@@ -1,0 +1,78 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+button:hover { opacity: 0.85; }
+
+.todo-table { overflow-x: auto; }
+
+.todo-columns, .todo-row {
+  display: grid;
+  grid-template-columns: 20px minmax(140px, 1fr) 165px 76px;
+  align-items: center;
+  gap: 10px;
+  min-width: 455px;
+  padding: 12px 12px 12px 8px;
+}
+
+.todo-columns {
+  border-left: 4px solid transparent;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.todo-row > span { overflow-wrap: anywhere; }
+.todo-row > input:not([type="checkbox"]) { min-width: 0; width: 100%; }
+.todo-actions { display: flex; justify-content: flex-end; gap: 8px; }
+
+.nav-link, .secondary-button {
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  color: #374151;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 500;
+  text-decoration: none;
+}
+.nav-link.active { background: #3b82f6; color: white; }
+.primary-button {
+  padding: 10px 20px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Новые страницы используют те же цвета, поля и кнопки, что и Todo. */
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+.lesson-form { display: grid; gap: 14px; max-width: 520px; }
+.form-field { display: grid; gap: 6px; }
+.form-field input, .form-field select, .form-field textarea, .post-form input {
+  min-width: 0; width: 100%; padding: 10px; border-radius: 8px;
+  border: 1px solid #ddd; background: white; color: inherit; font: inherit;
+}
+.form-field [aria-invalid="true"] { border-color: #dc2626; }
+.field-error { margin: 0; color: #b91c1c; font-size: 14px; }
+.lesson-section { margin-top: 32px; }
+.order-item { border: 1px solid #ddd; border-radius: 8px; padding: 14px; display: grid; gap: 12px; min-width: 0; }
+.button-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.post-form { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.post-form input { flex: 1; }
+.posts-list { list-style: none; padding: 0; }
+.post-item { padding: 16px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 8px; background: white; overflow-wrap: anywhere; }
+.post-item a { color: #2563eb; }
+.post-item p, .muted { color: #64748b; }
+.post-toolbar { justify-content: space-between; margin: 16px 0; }
+.post-search { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; color: #374151; }
+.post-search input { padding: 9px 10px; border: 1px solid #ddd; border-radius: 8px; font: inherit; }
+.post-body { white-space: pre-wrap; overflow-wrap: anywhere; }
