@@ -1,0 +1,5 @@
+<h2>3.1. Счётчик кликов</h2>
+<p class="value" aria-live="polite">{{ count }}</p>
+<div class="row"><button (click)="increment()">+1</button><button (click)="decrement()">−1</button></div>
+@if (count > 5) { <p role="status">Вы кликнули много раз!</p> }
+@else if (count < 0) { <p role="status">Счётчик ушёл в минус</p> }

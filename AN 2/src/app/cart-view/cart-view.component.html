@@ -1,0 +1,6 @@
+<h3>Товары в корзине</h3>
+@for (item of cart.getItems(); track item.id) {
+ <div class="list-item"><span>{{ item.name }} · {{ item.price | currency:'RUB':'symbol':'1.2-2':'ru' }} × {{ item.quantity }}</span><button class="delete" [attr.aria-label]="'Удалить товар ' + item.name" (click)="cart.removeItem(item.id)">✕</button></div>
+} @empty { <p class="muted">Корзина пуста</p> }
+<p class="total" aria-live="polite">Итого: {{ cart.getTotal() | currency:'RUB':'symbol':'1.2-2':'ru' }}</p>
+<button class="secondary" [disabled]="cart.getItems().length === 0" (click)="cart.clear()">Очистить корзину</button>

@@ -1,0 +1,15 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  max-width: 300px;
+  font-family: sans-serif;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 1.2em;
+}

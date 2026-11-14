@@ -1,0 +1,12 @@
+<div class="card">
+  <!-- Интерполяция выводит значения из компонента. -->
+  <h2>{{ product.name }}</h2>
+  <p class="price">Цена: {{ product.price }} ₽</p>
+
+  <!-- Показываем описание, только если оно задано. -->
+  @if (product.description) {
+    <p class="desc">{{ product.description }}</p>
+  }
+
+  <small>{{ getProductInfo() }}</small>
+</div>

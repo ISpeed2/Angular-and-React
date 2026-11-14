@@ -1,0 +1,6 @@
+<h2>3.2. Список покупок</h2>
+<div class="row"><input #purchase aria-label="Новая покупка" placeholder="Новая покупка…" (keyup.enter)="addItem(purchase)"><button (click)="addItem(purchase)">Добавить</button></div>
+@for (item of items; track item.id) {
+ <div class="list-item"><label><input type="checkbox" [checked]="item.done" (change)="toggle(item.id)"><span [class.done]="item.done">{{ item.name }}</span></label><button class="delete" [attr.aria-label]="'Удалить покупку ' + item.name" (click)="remove(item.id)">✕</button></div>
+} @empty { <p class="muted">Список покупок пуст</p> }
+<p aria-live="polite">Выполнено {{ completed }} из {{ items.length }}</p>

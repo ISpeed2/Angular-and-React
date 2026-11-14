@@ -1,0 +1,6 @@
+<h3>Добавить товар</h3>
+<form (submit)="$event.preventDefault(); add(productName, productPrice)">
+ <label class="field">Название<input #productName required placeholder="Например, чай"></label>
+ <label class="field">Цена, ₽<input #productPrice type="number" required min="0" step="0.01" placeholder="150.00"></label>
+ <button type="submit">Добавить в корзину</button>
+</form>
